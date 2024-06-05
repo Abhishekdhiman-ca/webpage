@@ -1,0 +1,472 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  font-variant: small-caps;
+}
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 16px;
+  }
+}
+
+/* Global styles */
+body {
+  margin: auto;
+  margin-top: auto;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #eee9e5;
+}
+#Title {
+  text-align: center;
+  font-size: x-large;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  #Title {
+    font-size: large;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 10px;
+  }
+}
+
+/* Styles for the navigation menu */
+#top_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f4f4f;
+  color: #fff;
+  padding: 10px;
+}
+#search_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#center_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #696969;
+  color: #fff;
+  padding: 10px;
+}
+input[type="Search"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.signin {
+  padding: 5px;
+  border: none;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  background: rgb(13, 153, 160);
+}
+
+ul {
+  margin-left: 20px;
+}
+details {
+  margin-left: -15px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #5e5756;
+}
+
+.cont_men {
+  margin: 0% 3%;
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  #top_menu {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+  }
+  #center_menu {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+  }
+  input[type="Search"] {
+    width: 100%;
+    border-radius: 5px;
+  }
+  ul {
+    margin-left: 10px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .cont_men {
+    margin: 0;
+  }
+  .signin {
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+}
+/* Styles for the service prices table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+th,
+td {
+  border: 1px solid #111110;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #227d4a;
+  color: #fff;
+  align-items: center;
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  table {
+    font-size: 14px;
+  }
+  th,
+  td {
+    padding: 6px;
+    font-size: 12px;
+    align-items: center;
+  }
+  th {
+    font-size: 14px;
+    align-items: center;
+  }
+}
+
+/* Styles for the service prices table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #111110;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #2f4f4f;
+  color: #fff;
+}
+
+/* Styles for the form */
+form {
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #696969;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 120px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #2f4f4f;
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="reset"]:hover {
+  background-color: #2f4f4f;
+  cursor: pointer;
+}
+
+img {
+  margin: 20px;
+}
+.mainpic {
+  float: right;
+  width: 65%;
+  margin: 1%;
+  border-color: rgb(129, 175, 125);
+  border-style: inset;
+  border-radius: 20px;
+  border-width: 1px;
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+.logo {
+  width: 50px;
+}
+
+main {
+  margin: 0% 3%;
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  form {
+    padding: 10px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  button[type="submit"] {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+/* Footer styles */
+
+.last {
+  background-color: #2f4f4f;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 3% 1% 3%;
+  margin: 0.15%;
+}
+
+.last h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: darkorange;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.last h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.last div {
+  margin-bottom: 15px;
+}
+
+.last label {
+  font-size: 1.1rem;
+  margin-right: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.last input {
+  padding: 5px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 200px;
+}
+
+.last button {
+  padding: 5px 15px;
+  background-color: rgb(56, 56, 53);
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.last button:hover {
+  background-color: rgb(218, 57, 13);
+}
+
+.last p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: gold;
+}
+
+.last hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.last nav ul {
+  list-style: armenian;
+  margin: 0;
+  padding: 0;
+}
+
+.last nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.last nav ul li a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fcfbfb;
+}
+
+.last nav ul li a:hover {
+  color: #0077cc;
+}
+
+.last h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.last p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.last h6 {
+  font-size: 0.8rem;
+  margin-top: 20px;
+  text-align: center;
+  color: #999;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Footer styles for mobile phones */
+@media screen and (max-width: 480px) {
+  .last {
+    padding: 10px;
+  }
+
+  .last h2 {
+    font-size: 1.2rem;
+  }
+
+  .last h3 {
+    font-size: 1rem;
+  }
+
+  .last input {
+    width: 100%;
+  }
+}
+
+iframe {
+  height: auto;
+  width: auto;
+}
+
+@media screen and (max-width: 600px) {
+  iframe {
+    max-width: fit-content;
+  }
+}
